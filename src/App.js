@@ -22,6 +22,9 @@ function App() {
         </Navbar.Collapse>
       </Navbar>
       {/* ---------NAV BAR END--------- */}
+
+
+      {/* ---------HEADER--------- */}
       <section>
         <div className="main-Header">
           <div>
@@ -32,6 +35,15 @@ function App() {
           {/* IMG JUAN */}
         </div>
       </section>
+
+      {/* ---------HEADER END--------- */}
+
+
+      {/* ---------ABOUT ME--------- */}
+      <section>
+
+      </section>
+      {/* ---------ABOUT ME END--------- */}
 
     </div>
   );
