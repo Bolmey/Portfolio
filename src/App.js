@@ -33,6 +33,7 @@ function App() {
             <h4>Web Developer</h4>
           </div>
           {/* IMG JUAN */}
+          <h1>NOthing</h1>
         </div>
       </section>
 
