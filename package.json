@@ -1,7 +1,7 @@
 {
   "name": "webapp",
   "version": "0.1.0",
-  "homepage": "https://bolmey.github.io/portfilio",
+  "homepage": "https://juanbolmey.com/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.13.0",
