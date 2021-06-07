@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/portfilio/static/css/main.9d5b29c0.chunk.css",
+    "main.js": "/portfilio/static/js/main.c6829c44.chunk.js",
+    "main.js.map": "/portfilio/static/js/main.c6829c44.chunk.js.map",
+    "runtime-main.js": "/portfilio/static/js/runtime-main.b443541a.js",
+    "runtime-main.js.map": "/portfilio/static/js/runtime-main.b443541a.js.map",
+    "static/js/2.87579cf3.chunk.js": "/portfilio/static/js/2.87579cf3.chunk.js",
+    "static/js/2.87579cf3.chunk.js.map": "/portfilio/static/js/2.87579cf3.chunk.js.map",
+    "static/js/3.8e04d233.chunk.js": "/portfilio/static/js/3.8e04d233.chunk.js",
+    "static/js/3.8e04d233.chunk.js.map": "/portfilio/static/js/3.8e04d233.chunk.js.map",
+    "index.html": "/portfilio/index.html",
+    "static/css/main.9d5b29c0.chunk.css.map": "/portfilio/static/css/main.9d5b29c0.chunk.css.map",
+    "static/js/2.87579cf3.chunk.js.LICENSE.txt": "/portfilio/static/js/2.87579cf3.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/portfilio/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b443541a.js",
+    "static/js/2.87579cf3.chunk.js",
+    "static/css/main.9d5b29c0.chunk.css",
+    "static/js/main.c6829c44.chunk.js"
+  ]
+}
