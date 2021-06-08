@@ -22,14 +22,14 @@
   text-align: center;
   padding-top: 30px;
   color:white;
-  background-image: url("./img/JuanPort.png");
   background-size: 100%;
   background-repeat: no-repeat;
-  bottom: 0;
+  background-position: bottom;
+  overflow: hidden;
 }
 
 .headerImg{
-  width: 100%;
+  width: 85%;
   margin-left: 15px;
 }
 
