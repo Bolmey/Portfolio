@@ -4,6 +4,9 @@
   font-family: 'Roboto', sans-serif;
 }
 
+
+/* ---------HEADING START--------- */
+
 .header{
   width: 100%;
   margin: auto;
@@ -18,9 +21,71 @@
   color:white;
 }
 
+.headerImg{
+  width: 100%;
+  margin-left: 15px;
+}
+
 .headerText{
   text-align: left;
 }
+
+/* ---------HEADING END--------- */
+
+/* ---------ABOUT ME START--------- */
+.aboutMe{
+  width: 100%;
+  margin: auto;
+  background-color: #313131;
+}
+
+.aboutMeContainer{
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.accent{
+  width: 100px;
+  height: 5px;
+  background-color: red;
+  margin-bottom: 8px;
+}
+
+.aboutMe h2{
+  color: white;
+}
+
+.aboutMe p{
+  color: white;
+}
+
+.imgContainer{
+  height: 300px;
+  width: 300px;
+  background-color: red;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.aboutMeImage{
+  width: 115%;
+}
+
+/* ---------ABOUT ME END--------- */
+
+
+
+/* ---------PROJECTS START--------- */
+
+
+
+/* ---------PROJECTS END--------- */
+
+
+
 
 .fa-github{
   width: 50px;
