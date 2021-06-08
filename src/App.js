@@ -25,7 +25,7 @@ function App() {
 
 
       {/* ---------HEADER--------- */}
-      <section>
+      <section className="header">
         <div className="main-Header">
           <div>
             <h5>Hello</h5>
@@ -41,7 +41,7 @@ function App() {
 
 
       {/* ---------ABOUT ME--------- */}
-      <section>
+      <section className="aboutMe">
 
       </section>
       {/* ---------ABOUT ME END--------- */}
