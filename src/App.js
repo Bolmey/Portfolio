@@ -27,13 +27,12 @@ function App() {
       {/* ---------HEADER--------- */}
       <section className="header">
         <div className="main-Header">
-          <div>
+          <div className="headerText">
             <h5>Hello</h5>
             <h1>I'm Juan Bolmey</h1>
             <h4>Web Developer</h4>
           </div>
           {/* IMG JUAN */}
-          <h1>NOthing</h1>
         </div>
       </section>
 
@@ -72,7 +71,14 @@ function App() {
 
       {/* ---------PROJECTS--------- */}
       <h2>Latest Projects</h2>
-
+      <div className="accent"></div>
+      <div className='projects'>
+        <div className="projects-Box">
+          <h4>Dev Lane</h4>
+          <h6>Technologies</h6>
+          <i className="fab fa-github"></i>
+        </div>
+      </div>
 
       {/* ---------PROJECTS END--------- */}
 
