@@ -51,11 +51,24 @@
   margin: auto;
   flex-direction: column;
   align-items: center;
+  height: 890px;
 }
 
 @media only screen and (max-width: 600px){
   .aboutMeContainerMobile{
-    display: flex;
+    display: block;
+  }
+
+  .cvButton{
+    background-color: #313131;
+    border: 2px solid red;
+    border-radius: 8px;
+    color: white;
+    width: 100px;
+    margin-bottom: 12px;
+    position: absolute;
+    right: 60px;
+    bottom: -524px;
   }
 
   .aboutMeContainer{
@@ -77,10 +90,11 @@
   width: 100px;
   height: 5px;
   background-color: red;
-  margin-bottom: 8px;
+  margin-bottom: 12px;
 }
 
 .aboutMe h2{
+  padding-top: 12px;
   color: white;
 }
 
@@ -95,10 +109,21 @@
   overflow: hidden;
   display: flex;
   justify-content: center;
+  margin-bottom: 12px;;
 }
 
 .aboutMeImage{
   width: 115%;
+}
+
+.cvButton{
+  background-color: #313131;
+  border: 2px solid red;
+  border-radius: 8px;
+  color: white;
+  width: 100px;
+  margin-bottom: 12px;
+  position: absolute;
 }
 
 /* ---------ABOUT ME END--------- */
@@ -120,6 +145,7 @@
 
 .project h2{
   color: white;
+  padding-top: 12px;
 }
 
 .project-container{
@@ -133,8 +159,29 @@
 .projects-Box{
   width: 250px;
   height: 200px;
-  background-color: blue;
+  background: rgb(0,0,0);
+  background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(98,98,98,1) 59%, rgba(111,111,111,1) 100%);
   margin: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: 8px;
+}
+
+.projects-Box h4{
+  font-size: 2.5em;;
+  color:white;
+}
+
+.projects-Box h6{
+  color:white;
+}
+
+.project-text{
+  position: absolute;
+  bottom: 0px;
 }
 
 

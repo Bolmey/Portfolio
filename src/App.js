@@ -69,7 +69,7 @@ function App() {
               currently on the hunt for a position as a
               web developer.
           </p>
-            <button>View CV</button>
+            <button className="cvButton">View CV</button>
           </div>
         </div>
         <div className='aboutMeContainer'>
@@ -118,29 +118,38 @@ function App() {
           <div className='project-container'>
             <div className="projects-Box">
               <h4>Dev Lane</h4>
-              <h6>Technologies</h6>
-              <i className="fab fa-github"></i>
+              <div className='project-text'>
+                <h6>Technologies</h6>
+                <i className="fab fa-github"></i>
+              </div>
             </div>
             <div className="projects-Box">
-              <h4>Monopoly</h4>
-              <h6>Technologies</h6>
-              <i className="fab fa-github"></i>
+              <h4>Webopoly</h4>
+              <div className='project-text'>
+                <h6>Technologies</h6>
+                <i className="fab fa-github"></i>
+              </div>
             </div>
             <div className="projects-Box">
-              <h4>Juan B</h4>
-              <h6>Technologies</h6>
-              <i className="fab fa-github"></i>
-            </div>
-            <div className="projects-Box">
-              <h4>Bad Bunny</h4>
-              <h6>Technologies</h6>
-              <i className="fab fa-github"></i>
+              <h4>Day Fly</h4>
+              <div className='project-text'>
+                <h6>Technologies</h6>
+                <i className="fab fa-github"></i>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
       {/* ---------PROJECTS END--------- */}
+
+      {/* ---------CONTACT START--------- */}
+      <section className="contactMe">
+
+      </section>
+
+
+      {/* ---------CONTACT END--------- */}
 
     </div>
   );
