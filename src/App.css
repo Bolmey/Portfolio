@@ -137,7 +137,7 @@
 .imgContainer{
   height: 300px;
   width: 300px;
-  background-color: red;
+  background-image: url('http://cdn.shopify.com/s/files/1/2440/7149/products/MH-052_600x.jpg?v=1579885500');
   overflow: hidden;
   display: flex;
   justify-content: center;
