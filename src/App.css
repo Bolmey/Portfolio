@@ -35,6 +35,29 @@
 
 .headerText{
   text-align: left;
+  
+}
+
+@media only screen and (min-width: 600px) {
+  .header{
+    display: flex;
+
+  }
+
+  .main-Header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .headerImg{
+    
+    width: 388px;
+    height: auto;
+    object-fit: contain;
+    
+  }
+
 }
 
 /* ---------HEADING END--------- */
@@ -82,6 +105,16 @@
 
   .aboutMeContainer{
     display: flex;
+    width: 80%;
+    margin: auto;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0 20px 0;
+  }
+
+  .text-box{
+    width: 600px;
+
   }
 }
 
