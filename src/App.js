@@ -128,6 +128,7 @@ function App() {
       {/* ---------PROJECTS--------- */}
       <section className="project">
         <div className='projectContainerMain'>
+          {/* <div className='mouse'> */}
           <h2>Latest Projects</h2>
           <div className="accent"></div>
           <div className='project-container'>
@@ -152,6 +153,28 @@ function App() {
                 <i className="fab fa-github"></i>
               </div>
             </div>
+            <div className="projects-Box">
+              <h4>Day Fly</h4>
+              <div className='project-text'>
+                <h6>Technologies</h6>
+                <i className="fab fa-github"></i>
+              </div>
+            </div>
+            <div className="projects-Box">
+              <h4>Day Fly</h4>
+              <div className='project-text'>
+                <h6>Technologies</h6>
+                <i className="fab fa-github"></i>
+              </div>
+            </div>
+            <div className="projects-Box">
+              <h4>Day Fly</h4>
+              <div className='project-text'>
+                <h6>Technologies</h6>
+                <i className="fab fa-github"></i>
+              </div>
+            </div>
+            {/* </div> */}
           </div>
         </div>
       </section>
@@ -175,7 +198,7 @@ function App() {
 
       {/* ---------CONTACT END--------- */}
 
-    </div>
+    </div >
   );
 }
 

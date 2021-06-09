@@ -168,6 +168,28 @@
 
 /* ---------PROJECTS START--------- */
 
+@media only screen and (min-width: 600px){
+
+.project-container{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.projectContainerMain{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 55px;
+}
+
+.project-container{
+  max-width: 950px;
+}
+
+
+}
+
+
 .project{
   width: 100%;
   margin: auto;
@@ -189,7 +211,6 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  max-width: 700px;
 }
 
 .projects-Box{
