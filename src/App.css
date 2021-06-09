@@ -48,6 +48,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    max-width: 1250px;
   }
 
   .headerImg{
@@ -103,6 +104,18 @@
     display: none;
   }
 
+  .cvButton{
+    background-color: #313131;
+    border: 2px solid red;
+    border-radius: 8px;
+    color: white;
+    width: 100px;
+    margin-bottom: 12px;
+    position: absolute;
+    right: 60px;
+    bottom: -524px;
+  }
+
   .aboutMeContainer{
     display: flex;
     width: 80%;
@@ -110,6 +123,7 @@
     justify-content: space-around;
     align-items: center;
     padding: 20px 0 20px 0;
+    max-width: 1250px;
   }
 
   .text-box{
@@ -199,7 +213,9 @@
 .projectContainerMain{
   width: 80%;
   margin: auto;
+  max-width: 1189px;
 }
+
 
 .project h2{
   color: white;

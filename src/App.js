@@ -118,7 +118,7 @@ function App() {
                 currently on the hunt for a position as a
                 web developer.
           </p>
-              <button>View CV</button>
+              <button className="cvButton">View CV</button>
             </div>
           </div>
         </div>
