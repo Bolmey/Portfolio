@@ -267,13 +267,32 @@
   width: 100%;
   margin: auto;
   background-color: #313131;
+  padding-top: 12px;
 }
 
 .contactMeContainer{
   width: 72%;
   margin: auto;
   display: flex;
-  
+
+}
+
+.contactText{
+
+}
+
+.contactText h2{
+  color: white;
+}
+
+.contactText h3{
+  color: white;
+  font-size: 2em;
+  padding-top: 15px;
+}
+
+.contact-form{
+  color: white;
 }
 
 

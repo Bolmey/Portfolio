@@ -181,10 +181,15 @@ function App() {
             <h3>Let's start a Conversation!</h3>
           </div>
           <form className="contact-form" onSubmit={sendEmail}>
-            <label>Name:</label>
-            <input type="text" name='name' value={toSend.name} onChange={handleChange}></input>
-            <label>Email:</label>
-            <input type="email" name='email' value={toSend.email} onChange={handleChange}></input>
+            <div>
+              <label>Name:</label>
+              <br></br>
+              <input type="text" name='name' value={toSend.name} onChange={handleChange}></input>
+              <br></br>
+              <label>Email:</label>
+              <br></br>
+              <input type="email" name='email' value={toSend.email} onChange={handleChange}></input>
+            </div>
             <label>Message:</label>
             <textarea type='text' rows='10' cols="80" name="message" value={toSend.message} onChange={handleChange}></textarea>
             <button type='submit'><b>Send Message</b></button>
