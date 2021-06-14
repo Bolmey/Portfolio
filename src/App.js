@@ -4,23 +4,28 @@ import Nav from 'react-bootstrap/Nav';
 import headerImg from './img/JuanPort.png';
 import aboutMeImg from './img/juanabout.png';
 import emailjs from 'emailjs-com';
+import { send } from 'emailjs-com';
+import { useState } from 'react'
 
 
 function App() {
-
+  let [toSend, setToSend] = useState({ name: "", email: "", message: "" })
   function sendEmail(e) {
-    e.preventDefault();
-
-    emailjs.sendForm('gmail', 'service_rvg5jju', e.target, 'user_b8UrQpDrr45ysmRw8Atjx')
-      .then((result) => {
-        console.log(result.text);
-      }, (error) => {
-        console.log(error.text);
+    e.preventDefault()
+    alert("Message sent")
+    send('gmail', 'service_rvg5jju', e.target, 'user_b8UrQpDrr45ysmRw8Atjx')
+      .then((res) => {
+        console.log('succes', res.status, res.text);
+      })
+      .catch((error) => {
+        console.log('failed', error);
       });
-    e.target.reset()
+  }
+  function handleChange(e) {
+    setToSend({ ...toSend, [e.target.name]: e.target.value });
   }
 
-
+  //'gmail', 'service_rvg5jju', e.target, 'user_b8UrQpDrr45ysmRw8Atjx'
   return (
     <div className="App">
       {/* ---------NAV BAR--------- */}
@@ -154,21 +159,7 @@ function App() {
               </div>
             </div>
             <div className="projects-Box">
-              <h4>Day Fly</h4>
-              <div className='project-text'>
-                <h6>Technologies</h6>
-                <i className="fab fa-github"></i>
-              </div>
-            </div>
-            <div className="projects-Box">
-              <h4>Day Fly</h4>
-              <div className='project-text'>
-                <h6>Technologies</h6>
-                <i className="fab fa-github"></i>
-              </div>
-            </div>
-            <div className="projects-Box">
-              <h4>Day Fly</h4>
+              <h4>University Page</h4>
               <div className='project-text'>
                 <h6>Technologies</h6>
                 <i className="fab fa-github"></i>
@@ -184,14 +175,13 @@ function App() {
       {/* ---------CONTACT START--------- */}
       <section className="contactMe">
         <form className="contact-form" onSubmit={sendEmail}>
-          <input type="hidden" name="contact_number" />
-          <label>Name</label>
-          <input type="text" name="user_name" />
-          <label>Email</label>
-          <input type="email" name="user_email" />
-          <label>Message</label>
-          <textarea name="message" />
-          <input type="submit" value="Send" />
+          <label>Name:</label>
+          <input type="text" name='name' value={toSend.name} onChange={handleChange}></input>
+          <label>Email:</label>
+          <input type="email" name='email' value={toSend.email} onChange={handleChange}></input>
+          <label>Message:</label>
+          <textarea type='text' rows='10' cols="80" name="message" value={toSend.message} onChange={handleChange}></textarea>
+          <button type='submit'><b>Send Message</b></button>
         </form>
       </section>
 
