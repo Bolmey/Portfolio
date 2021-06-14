@@ -37,7 +37,7 @@ function App() {
             <Nav.Link href="https://www.linkedin.com/in/bolmey/">Linkedin</Nav.Link>
             <Nav.Link eventKey={2} href="https://github.com/Bolmey">
               Github
-      </Nav.Link>
+            </Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Navbar>
@@ -88,7 +88,7 @@ function App() {
               on projects with other developers. I am
               currently on the hunt for a position as a
               web developer.
-          </p>
+            </p>
             <button className="cvButton">View CV</button>
           </div>
         </div>
@@ -122,7 +122,7 @@ function App() {
                 on projects with other developers. I am
                 currently on the hunt for a position as a
                 web developer.
-          </p>
+              </p>
               <button className="cvButton">View CV</button>
             </div>
           </div>
@@ -174,15 +174,22 @@ function App() {
 
       {/* ---------CONTACT START--------- */}
       <section className="contactMe">
-        <form className="contact-form" onSubmit={sendEmail}>
-          <label>Name:</label>
-          <input type="text" name='name' value={toSend.name} onChange={handleChange}></input>
-          <label>Email:</label>
-          <input type="email" name='email' value={toSend.email} onChange={handleChange}></input>
-          <label>Message:</label>
-          <textarea type='text' rows='10' cols="80" name="message" value={toSend.message} onChange={handleChange}></textarea>
-          <button type='submit'><b>Send Message</b></button>
-        </form>
+        <div className='contactMeContainer'>
+          <div className="contactText">
+            <h2>About Me</h2>
+            <div className="accent"></div>
+            <h3>Let's start a Conversation!</h3>
+          </div>
+          <form className="contact-form" onSubmit={sendEmail}>
+            <label>Name:</label>
+            <input type="text" name='name' value={toSend.name} onChange={handleChange}></input>
+            <label>Email:</label>
+            <input type="email" name='email' value={toSend.email} onChange={handleChange}></input>
+            <label>Message:</label>
+            <textarea type='text' rows='10' cols="80" name="message" value={toSend.message} onChange={handleChange}></textarea>
+            <button type='submit'><b>Send Message</b></button>
+          </form>
+        </div>
       </section>
 
 

@@ -263,6 +263,23 @@
 
 /* ---------CONTACT ME START--------- */
 
+.contactMe{
+  width: 100%;
+  margin: auto;
+  background-color: #313131;
+}
+
+.contactMeContainer{
+  width: 72%;
+  margin: auto;
+  display: flex;
+  
+}
+
+
+
+
+
 /* ---------CONTACT ME END--------- */
 
 
