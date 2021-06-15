@@ -159,7 +159,7 @@ function App() {
               </div>
             </div>
             <div className="projects-Box">
-              <h4>University Page</h4>
+              <h4>University</h4>
               <div className='project-text'>
                 <h6>Technologies</h6>
                 <i className="fab fa-github"></i>
@@ -173,29 +173,7 @@ function App() {
       {/* ---------PROJECTS END--------- */}
 
       {/* ---------CONTACT START--------- */}
-      <section className="contactMe">
-        <div className='contactMeContainer'>
-          <div className="contactText">
-            <h2>About Me</h2>
-            <div className="accent"></div>
-            <h3>Let's start a Conversation!</h3>
-          </div>
-          <form className="contact-form" onSubmit={sendEmail}>
-            <div>
-              <label>Name:</label>
-              <br></br>
-              <input type="text" name='name' value={toSend.name} onChange={handleChange}></input>
-              <br></br>
-              <label>Email:</label>
-              <br></br>
-              <input type="email" name='email' value={toSend.email} onChange={handleChange}></input>
-            </div>
-            <label>Message:</label>
-            <textarea type='text' rows='10' cols="80" name="message" value={toSend.message} onChange={handleChange}></textarea>
-            <button type='submit'><b>Send Message</b></button>
-          </form>
-        </div>
-      </section>
+
 
 
       {/* ---------CONTACT END--------- */}
