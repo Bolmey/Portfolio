@@ -9,20 +9,17 @@ import { useState } from 'react'
 
 
 function App() {
-  let [toSend, setToSend] = useState({ name: "", email: "", message: "" })
+
+
   function sendEmail(e) {
-    e.preventDefault()
-    alert("Message sent")
-    send('gmail', 'service_rvg5jju', e.target, 'user_b8UrQpDrr45ysmRw8Atjx')
-      .then((res) => {
-        console.log('succes', res.status, res.text);
-      })
-      .catch((error) => {
-        console.log('failed', error);
+    e.preventDefault();
+
+    emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', e.target, 'YOUR_USER_ID')
+      .then((result) => {
+        console.log(result.text);
+      }, (error) => {
+        console.log(error.text);
       });
-  }
-  function handleChange(e) {
-    setToSend({ ...toSend, [e.target.name]: e.target.value });
   }
 
   //'gmail', 'service_rvg5jju', e.target, 'user_b8UrQpDrr45ysmRw8Atjx'
@@ -174,7 +171,18 @@ function App() {
 
       {/* ---------CONTACT START--------- */}
 
-
+      <section className='contactMe'>
+        <form className="contact-form" onSubmit={sendEmail}>
+          <input type="hidden" name="contact_number" />
+          <label>Name</label>
+          <input type="text" name="user_name" />
+          <label>Email</label>
+          <input type="email" name="user_email" />
+          <label>Message</label>
+          <textarea name="message" />
+          <input type="submit" value="Send" />
+        </form>
+      </section>
 
       {/* ---------CONTACT END--------- */}
 
