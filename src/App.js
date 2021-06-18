@@ -14,12 +14,13 @@ function App() {
   function sendEmail(e) {
     e.preventDefault();
 
-    emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', e.target, 'YOUR_USER_ID')
+    emailjs.sendForm('gmail', 'template_b0453ue', e.target, 'user_b8UrQpDrr45ysmRw8Atjx')
       .then((result) => {
         console.log(result.text);
       }, (error) => {
         console.log(error.text);
       });
+    e.target.reset()
   }
 
   //'gmail', 'service_rvg5jju', e.target, 'user_b8UrQpDrr45ysmRw8Atjx'
@@ -178,9 +179,9 @@ function App() {
         <form className="contact-form" onSubmit={sendEmail}>
           <input type="hidden" name="contact_number" />
           <label>Name</label>
-          <input type="text" name="user_name" />
+          <input type="text" name="name" />
           <label>Email</label>
-          <input type="email" name="user_email" />
+          <input type="email" name="email" />
           <label>Message</label>
           <textarea name="message" />
           <input type="submit" value="Send" />
