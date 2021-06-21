@@ -98,7 +98,6 @@ function App() {
               <img className='aboutMeImage' src={aboutMeImg} />
             </div>
           </div>
-          <h1>delete</h1>
 
           <div>
             <h2>About Me</h2>
@@ -126,7 +125,6 @@ function App() {
               <button className="cvButton">View CV</button>
             </div>
           </div>
-          <h1>delete</h1>
         </div>
       </section>
       {/* ---------ABOUT ME END--------- */}
