@@ -49,7 +49,6 @@ function App() {
             <h5>Hello</h5>
             <h1>I'm Juan Bolmey</h1>
             <h4>Web Developer</h4>
-            <h1>delete</h1>
           </div>
           <img className="headerImg" src={headerImg} />
         </div>
