@@ -5,7 +5,14 @@ import headerImg from './img/JuanPort.png';
 import aboutMeImg from './img/juanabout.png';
 import emailjs from 'emailjs-com';
 import { send } from 'emailjs-com';
-import { useState } from 'react'
+import { useState } from 'react';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+
 
 
 function App() {
@@ -121,7 +128,7 @@ function App() {
                 currently on the hunt for a position as a
                 web developer.
               </p>
-              <button className="cvButton">View CV</button>
+              <button className="cvButton"><a className="atag" href="https://drive.google.com/file/d/1_BFU6HjGuO0CxMPzmQ0oo-GOQPdd7l7J/view?usp=sharing">View CV</a></button>
             </div>
           </div>
         </div>

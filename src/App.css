@@ -204,6 +204,15 @@
 }
 
 
+.atag{
+  text-decoration: none;
+  color: white;
+}
+
+.atag:hover{
+  color:white;
+}
+
 .project{
   width: 100%;
   margin: auto;
