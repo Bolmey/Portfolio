@@ -197,7 +197,7 @@
 }
 
 .project-container{
-  max-width: 950px;
+  max-width: 951px;
 }
 
 
@@ -210,7 +210,7 @@
 }
 
 .atag:hover{
-  color:white;
+  color:rgb(255, 248, 248);
 }
 
 .project{
