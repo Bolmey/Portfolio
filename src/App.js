@@ -151,6 +151,7 @@ function App() {
             </div>
             <div className="projects-Box">
               <h4>Webopoly</h4>
+              <h4>Webopoly</h4>
               <div className='project-text'>
                 <h6>Technologies</h6>
                 <i className="fab fa-github"></i>
