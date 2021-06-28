@@ -183,7 +183,7 @@ function App() {
       <section className='contactMe'>
         <form className="contact-form" onSubmit={sendEmail}>
           <input type="hidden" name="contact_number" />
-          <label>Name</label>
+          <label>Name:</label>
           <input type="text" name="name" />
           <label>Email</label>
           <input type="email" name="email" />
