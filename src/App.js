@@ -21,7 +21,7 @@ function App() {
   function sendEmail(e) {
     e.preventDefault();
 
-    emailjs.sendForm('gmail', 'template_b0453ue', e.target, 'user_b8UrQpDrr45ysmRw8Atjx')
+    emailjs.sendForm('service_rvg5jju', 'template_b0453ue', e.target, 'user_b8UrQpDrr45ysmRw8Atjx')
       .then((result) => {
         console.log(result.text);
       }, (error) => {
@@ -29,6 +29,7 @@ function App() {
       });
     e.target.reset()
   }
+
 
   //'gmail', 'service_rvg5jju', e.target, 'user_b8UrQpDrr45ysmRw8Atjx'
   return (
@@ -181,15 +182,17 @@ function App() {
       {/* ---------CONTACT START--------- */}
 
       <section className='contactMe'>
-        <form className="contact-form" onSubmit={sendEmail}>
-          <input type="hidden" name="contact_number" />
-          <label>Name:</label>
-          <input type="text" name="name" />
-          <label>Email</label>
-          <input type="email" name="email" />
-          <label>Message</label>
-          <textarea name="message" />
-          <input type="submit" value="Send" />
+        <form onSubmit={sendEmail} className="form">
+
+          <label>Name:</label><br />
+          <input type="text" name="user_name" /><br /><br />
+          <label>Email:</label><br />
+          <input type="email" name="user_email" /><br /><br />
+          <label>Message:</label><br />
+          <textarea placeholder="Enter your message" name="message" ></textarea><br /><br />
+          <input type="submit" value="Send" className="signupButton" />
+
+
         </form>
       </section>
 
