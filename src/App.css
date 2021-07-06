@@ -200,11 +200,6 @@
   max-width: 951px;
 }
 
-
-.form{
-  width: 80%;
-}
-
 }
 
 
@@ -286,7 +281,6 @@
 
 .form{
   margin: auto;
-  background-color: rgb(109 109 109);
   width: 50%;
   display: flex;
   align-items: center;
