@@ -184,11 +184,11 @@ function App() {
       <section className='contactMe'>
         <form onSubmit={sendEmail} className="form">
 
-          <label>Name:</label><br />
-          <input type="text" name="user_name" /><br /><br />
-          <label>Email:</label><br />
-          <input type="email" name="user_email" /><br /><br />
-          <label>Message:</label><br />
+          <label>Name:</label>
+          <input type="text" name="user_name" /><br />
+          <label>Email:</label>
+          <input type="email" name="user_email" /><br />
+          <label>Message:</label>
           <textarea placeholder="Enter your message" name="message" ></textarea><br /><br />
           <input type="submit" value="Send" className="signupButton" />
 

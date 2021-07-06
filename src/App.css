@@ -201,6 +201,10 @@
 }
 
 
+.form{
+  width: 80%;
+}
+
 }
 
 
@@ -277,18 +281,22 @@
   margin: auto;
   background-color: #313131;
   padding-top: 12px;
-}
-
-.contactMeContainer{
-  width: 72%;
-  margin: auto;
   display: flex;
-
 }
 
-.contactText{
-
+.form{
+  margin: auto;
+  background-color: rgb(109 109 109);
+  width: 50%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
 }
+
+
+
+
 
 .contactText h2{
   color: white;
